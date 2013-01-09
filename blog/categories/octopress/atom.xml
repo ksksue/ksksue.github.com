@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Geeekle Board Blog]]></title>
-  <link href="http://ksksue.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: octopress | Geeekle Board Blog]]></title>
+  <link href="http://ksksue.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://ksksue.github.com/"/>
   <updated>2013-01-09T21:19:28+09:00</updated>
   <id>http://ksksue.github.com/</id>
@@ -30,23 +30,27 @@
 
 <p>要はgithub用CMSにもってこい。</p>
 
-<p>Javaの整形はこんな感じ</p>
-
-<figure class='code'><figcaption><span>Javaコードの例  </span></figcaption>
+<p>Javaの整形はこんな感じ
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Javaコードの例  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
 </pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kn">package</span> <span class="n">jp</span><span class="o">.</span><span class="na">hoge</span><span class="o">;</span>
-</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FTDriver</span> <span class="o">{</span>
-</span><span class='line'>    <span class="kd">public</span> <span class="nf">FTDriver</span><span class="o">()</span> <span class="o">{</span>
-</span><span class='line'>        <span class="n">foo</span> <span class="o">=</span> <span class="n">bar</span><span class="o">;</span>
-</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FTDriver</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="kd">public</span> <span class="n">FTDriver</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">foo</span> <span class="o">=</span> <span class="n">bar</span><span class="o">;</span>
 </span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>記事はmarkdownで記述→ファイルgenerate。
 そうすると静的なページができるのでそれをgithub pagesのリポジトリにpushする。
