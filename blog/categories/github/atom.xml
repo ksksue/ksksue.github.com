@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Geeekle Board Blog]]></title>
-  <link href="http://ksksue.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: github | Geeekle Board Blog]]></title>
+  <link href="http://ksksue.github.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://ksksue.github.com/"/>
   <updated>2013-02-02T07:33:00+09:00</updated>
   <id>http://ksksue.github.com/</id>
@@ -75,7 +75,7 @@ githubについてはもうみんな知ってるよね</p>
 でも、githubがそのイメージを変えた。forkはポジティブなイメージに変わったんだ。</p>
 
 <p><img src="https://lh5.googleusercontent.com/-2nbJn3k9TvM/UQwrimEKi-I/AAAAAAAACds/L_HLUH3e5pM/s800/github_pj_16.jpg" alt="" /><br/>
-githubのトップページにはこう書いた&#8221;no longer a pain in the ass&#8221;(もうめんどくさいことはやめにしよう)ってね。</p>
+githubのトップページにはこう書いた"no longer a pain in the ass"(もうめんどくさいことはやめにしよう)ってね。</p>
 
 <p><img src="https://lh6.googleusercontent.com/-E9BSi772iPc/UQwrjFJZ3UI/AAAAAAAACdo/MqwWExyGF-U/s800/github_pj_17.jpg" alt="" /><br/>
 最初は紹介制にした。
@@ -143,105 +143,6 @@ PJ<br/>
 
 <p><img src="https://lh3.googleusercontent.com/-F2Cz7Z_UI-8/UQwrsxRTJsI/AAAAAAAACf8/6x6rD1eFduM/s800/github_pj_38.jpg" alt="" /><br/>
 PJ, Scott, 海野さん、運営OpenNetworkLab.の方々ありがとう。とてもいい講演でした。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[octopressをインストール]]></title>
-    <link href="http://ksksue.github.com/blog/2013/01/09/octopresswoinsutoru/"/>
-    <updated>2013-01-09T07:48:00+09:00</updated>
-    <id>http://ksksue.github.com/blog/2013/01/09/octopresswoinsutoru</id>
-    <content type="html"><![CDATA[<p><a href="http://octopress.org/">Octopress</a>というCMSを導入してみた。
-いくつかおもしろい特徴があってとくに以下の点が気に入った。</p>
-
-<ul>
-<li>github pagesに対応</li>
-<li>githubのコードを参照できる</li>
-<li>コードをキレイに整形して表示してくれる</li>
-</ul>
-
-
-<p>要はgithub用CMSにもってこい。</p>
-
-<p>Javaの整形はこんな感じ</p>
-
-<figure class='code'><figcaption><span>Javaコードの例  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kn">package</span> <span class="n">jp</span><span class="o">.</span><span class="na">hoge</span><span class="o">;</span>
-</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FTDriver</span> <span class="o">{</span>
-</span><span class='line'>    <span class="kd">public</span> <span class="nf">FTDriver</span><span class="o">()</span> <span class="o">{</span>
-</span><span class='line'>        <span class="n">foo</span> <span class="o">=</span> <span class="n">bar</span><span class="o">;</span>
-</span><span class='line'>    <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>`</p>
-
-<figure class='code'><figcaption><span>Javaコードの例  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="err">`</span>
-</span><span class='line'><span class="kn">package</span> <span class="n">jp</span><span class="o">.</span><span class="na">hoge</span><span class="o">;</span>
-</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FTDriver</span> <span class="o">{</span>
-</span><span class='line'>    <span class="kd">public</span> <span class="nf">FTDriver</span><span class="o">()</span> <span class="o">{</span>
-</span><span class='line'>        <span class="n">foo</span> <span class="o">=</span> <span class="n">bar</span><span class="o">;</span>
-</span><span class='line'>    <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>記事はmarkdownで記述→ファイルgenerate。
-そうすると静的なページができるのでそれをgithub pagesのリポジトリにpushする。
-実際には細かいコマンドは<code>rake</code>という<code>ruby + make</code>なコマンド一発で済むので
-markdown記述→<code>rake gen_deploy</code>コマンドでOK。</p>
-
-<p>markdownエディタには<code>retext</code>を使うとよい。
-ライブプレビューで見栄えをチェックしながらmarkdownを書ける。
-これはgithubのReadme.mdにも使える。</p>
-
-<p>テーマは少ないなりによさげなものがあったので変更した。</p>
-
-<ul>
-<li><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</a></li>
-</ul>
-
-
-<p>この中の<a href="http://shashankmehta.in/archive/2012/greyshade.html">Greyshade</a>というテーマにした。</p>
-
-<p>Qiitaには結構いい記事がいくつかあった。</p>
-
-<ul>
-<li><a href="http://qiita.com/tags/Octopress">http://qiita.com/tags/Octopress</a></li>
-</ul>
-
-
-<p>OctopressはJekyllというツールを使っているようで
-なんだろうと調べてみたら
-rubyで書かれたCMSらしい。
-このツールがなかなかいろいろ提供していてすばらしい。</p>
-
-<ul>
-<li><a href="http://melborne.github.com/2012/05/13/first-step-of-jekyll/">http://melborne.github.com/2012/05/13/first-step-of-jekyll/</a></li>
-</ul>
-
-
-<p>静的なWebページを生成するのはもちろん
-ローカルWebサーバを立てて
-<code>http://127.0.0.1:4000/</code>にアクセスするとその場で見栄えをチェックできる。</p>
-
-<p>rubyには普段ノータッチだけど、こういうツールを見ると
-rubyerの人たちがコレ使って開発したくなる気持ちがわかるな。</p>
 ]]></content>
   </entry>
   
